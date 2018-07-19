@@ -13,7 +13,40 @@
 		737CE81020FA49F8007E648E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737CE80F20FA49F8007E648E /* Assets.xcassets */; };
 		737CE81320FA49F8007E648E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737CE81120FA49F8007E648E /* LaunchScreen.storyboard */; };
 		737CE81620FA49F8007E648E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 737CE81520FA49F8007E648E /* main.m */; };
+		737CE82620FA4BCE007E648E /* newsInject.h in Headers */ = {isa = PBXBuildFile; fileRef = 737CE82420FA4BCE007E648E /* newsInject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		737CE82920FA4BCE007E648E /* newsInject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737CE82220FA4BCE007E648E /* newsInject.framework */; };
+		737CE82A20FA4BCE007E648E /* newsInject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 737CE82220FA4BCE007E648E /* newsInject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		737CE83520FA4C65007E648E /* Hook.h in Headers */ = {isa = PBXBuildFile; fileRef = 737CE83320FA4C65007E648E /* Hook.h */; };
+		737CE83620FA4C65007E648E /* Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 737CE83420FA4C65007E648E /* Hook.m */; };
+		737CE8412100E8D7007E648E /* fishInject.h in Headers */ = {isa = PBXBuildFile; fileRef = 737CE8402100E8D7007E648E /* fishInject.h */; };
+		737CE8432100E8D7007E648E /* fishInject.m in Sources */ = {isa = PBXBuildFile; fileRef = 737CE8422100E8D7007E648E /* fishInject.m */; };
+		737CE8472100E9B2007E648E /* libfishInject.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 737CE83E2100E8D7007E648E /* libfishInject.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		737CE82720FA4BCE007E648E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 737CE7FB20FA49F5007E648E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 737CE82120FA4BCE007E648E;
+			remoteInfo = newsInject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		737CE82E20FA4BCE007E648E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				737CE8472100E9B2007E648E /* libfishInject.dylib in Embed Frameworks */,
+				737CE82A20FA4BCE007E648E /* newsInject.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		737CE80320FA49F5007E648E /* InjectCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InjectCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +59,33 @@
 		737CE81220FA49F8007E648E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		737CE81420FA49F8007E648E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		737CE81520FA49F8007E648E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		737CE82220FA4BCE007E648E /* newsInject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = newsInject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		737CE82420FA4BCE007E648E /* newsInject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = newsInject.h; sourceTree = "<group>"; };
+		737CE82520FA4BCE007E648E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		737CE83320FA4C65007E648E /* Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hook.h; sourceTree = "<group>"; };
+		737CE83420FA4C65007E648E /* Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hook.m; sourceTree = "<group>"; };
+		737CE83E2100E8D7007E648E /* libfishInject.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libfishInject.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		737CE8402100E8D7007E648E /* fishInject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishInject.h; sourceTree = "<group>"; };
+		737CE8422100E8D7007E648E /* fishInject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fishInject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		737CE80020FA49F5007E648E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737CE82920FA4BCE007E648E /* newsInject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737CE81E20FA4BCE007E648E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737CE83B2100E8D7007E648E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				737CE80520FA49F5007E648E /* InjectCode */,
+				737CE82320FA4BCE007E648E /* newsInject */,
+				737CE83F2100E8D7007E648E /* fishInject */,
 				737CE80420FA49F5007E648E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				737CE80320FA49F5007E648E /* InjectCode.app */,
+				737CE82220FA4BCE007E648E /* newsInject.framework */,
+				737CE83E2100E8D7007E648E /* libfishInject.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,7 +131,47 @@
 			path = InjectCode;
 			sourceTree = "<group>";
 		};
+		737CE82320FA4BCE007E648E /* newsInject */ = {
+			isa = PBXGroup;
+			children = (
+				737CE82420FA4BCE007E648E /* newsInject.h */,
+				737CE82520FA4BCE007E648E /* Info.plist */,
+				737CE83320FA4C65007E648E /* Hook.h */,
+				737CE83420FA4C65007E648E /* Hook.m */,
+			);
+			path = newsInject;
+			sourceTree = "<group>";
+		};
+		737CE83F2100E8D7007E648E /* fishInject */ = {
+			isa = PBXGroup;
+			children = (
+				737CE8402100E8D7007E648E /* fishInject.h */,
+				737CE8422100E8D7007E648E /* fishInject.m */,
+			);
+			path = fishInject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		737CE81F20FA4BCE007E648E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737CE82620FA4BCE007E648E /* newsInject.h in Headers */,
+				737CE83520FA4C65007E648E /* Hook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737CE83C2100E8D7007E648E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737CE8412100E8D7007E648E /* fishInject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		737CE80220FA49F5007E648E /* InjectCode */ = {
@@ -81,15 +181,54 @@
 				737CE7FF20FA49F5007E648E /* Sources */,
 				737CE80020FA49F5007E648E /* Frameworks */,
 				737CE80120FA49F5007E648E /* Resources */,
+				737CE81C20FA4A22007E648E /* ShellScript */,
+				737CE82E20FA4BCE007E648E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				737CE82820FA4BCE007E648E /* PBXTargetDependency */,
 			);
 			name = InjectCode;
 			productName = InjectCode;
 			productReference = 737CE80320FA49F5007E648E /* InjectCode.app */;
 			productType = "com.apple.product-type.application";
+		};
+		737CE82120FA4BCE007E648E /* newsInject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 737CE82B20FA4BCE007E648E /* Build configuration list for PBXNativeTarget "newsInject" */;
+			buildPhases = (
+				737CE81D20FA4BCE007E648E /* Sources */,
+				737CE81E20FA4BCE007E648E /* Frameworks */,
+				737CE81F20FA4BCE007E648E /* Headers */,
+				737CE82020FA4BCE007E648E /* Resources */,
+				737CE83920FB8F71007E648E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = newsInject;
+			productName = newsInject;
+			productReference = 737CE82220FA4BCE007E648E /* newsInject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		737CE83D2100E8D7007E648E /* fishInject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 737CE8462100E8D7007E648E /* Build configuration list for PBXNativeTarget "fishInject" */;
+			buildPhases = (
+				737CE83A2100E8D7007E648E /* Sources */,
+				737CE83B2100E8D7007E648E /* Frameworks */,
+				737CE83C2100E8D7007E648E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fishInject;
+			productName = fishInject;
+			productReference = 737CE83E2100E8D7007E648E /* libfishInject.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +240,12 @@
 				ORGANIZATIONNAME = "新闻";
 				TargetAttributes = {
 					737CE80220FA49F5007E648E = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					737CE82120FA4BCE007E648E = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					737CE83D2100E8D7007E648E = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -119,6 +264,8 @@
 			projectRoot = "";
 			targets = (
 				737CE80220FA49F5007E648E /* InjectCode */,
+				737CE82120FA4BCE007E648E /* newsInject */,
+				737CE83D2100E8D7007E648E /* fishInject */,
 			);
 		};
 /* End PBXProject section */
@@ -134,7 +281,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		737CE82020FA4BCE007E648E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		737CE81C20FA4A22007E648E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "~/CommonShell/autoResign.sh";
+		};
+		737CE83920FB8F71007E648E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		737CE7FF20FA49F5007E648E /* Sources */ = {
@@ -147,7 +330,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		737CE81D20FA4BCE007E648E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737CE83620FA4C65007E648E /* Hook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737CE83A2100E8D7007E648E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737CE8432100E8D7007E648E /* fishInject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		737CE82820FA4BCE007E648E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 737CE82120FA4BCE007E648E /* newsInject */;
+			targetProxy = 737CE82720FA4BCE007E648E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		737CE80C20FA49F5007E648E /* Main.storyboard */ = {
@@ -283,14 +490,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KB7B8SQENU;
 				INFOPLIST_FILE = InjectCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lvmama.InjectCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0aabd89d-23b0-468f-9edf-ef03535f0858";
+				PROVISIONING_PROFILE_SPECIFIER = LvmamaGenericProfile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -299,15 +510,108 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = InjectCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lvmama.InjectCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		737CE82C20FA4BCE007E648E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KB7B8SQENU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = newsInject/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lvmama.newsInject;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		737CE82D20FA4BCE007E648E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = newsInject/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lvmama.newsInject;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		737CE8442100E8D7007E648E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KB7B8SQENU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		737CE8452100E8D7007E648E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -328,6 +632,24 @@
 			buildConfigurations = (
 				737CE81A20FA49F8007E648E /* Debug */,
 				737CE81B20FA49F8007E648E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		737CE82B20FA4BCE007E648E /* Build configuration list for PBXNativeTarget "newsInject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737CE82C20FA4BCE007E648E /* Debug */,
+				737CE82D20FA4BCE007E648E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		737CE8462100E8D7007E648E /* Build configuration list for PBXNativeTarget "fishInject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737CE8442100E8D7007E648E /* Debug */,
+				737CE8452100E8D7007E648E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
